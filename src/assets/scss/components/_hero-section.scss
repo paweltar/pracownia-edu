@@ -1,0 +1,18 @@
+.hero-section {
+  background: url(/assets/img/hero-img.jpeg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-section__column {
+  height: 100%;
+  padding-top: 25%;
+  color: $white;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.button--cta {
+  color $white;
+}
