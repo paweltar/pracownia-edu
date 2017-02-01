@@ -1,11 +1,13 @@
 .top-bar {
-  position: fixed;
-  width: 100%;
   color: $white;
   font-size: 18px;
-  z-index: 1;
   a {
     color: $white;
+  }
+  @include breakpoint(medium) {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
   }
   @include breakpoint(small only) {
     background-color: transparentize($black, .5);
