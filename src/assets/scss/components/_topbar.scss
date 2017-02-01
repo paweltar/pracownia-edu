@@ -8,8 +8,19 @@
     color: $white;
   }
   @include breakpoint(small only) {
-    opacity: 1;
+    background-color: transparentize($black, .5);
+    color: $white;
   };
+}
+
+.top-bar-left {
+  @include breakpoint(small only) {
+    border-bottom: 2px dashed $white;
+  }
+}
+
+.title-bar {
+  background: transparent;
 }
 
 .top-bar__submenu {
@@ -20,8 +31,14 @@
       border-bottom: 2px solid $neon-green;
     }
     @include breakpoint(small only) {
-      display: inline-block;
-      width: 100%;
+      color: $white;
     }
+  }
+}
+
+.menu-text {
+  @include breakpoint(small only) {
+    width: 100%;
+    text-align: center;
   }
 }

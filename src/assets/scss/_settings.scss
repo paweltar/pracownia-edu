@@ -57,12 +57,13 @@ $foundation-palette: (
   alert: #cc4b37,
   topbar-link-color: #2d2d2d,
 );
+$clay: #8F8164;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $white;
+$body-background: $clay;
 $body-font-color: $black;
 $body-font-family: 'PT Sans', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -589,12 +590,12 @@ $thumbnail-radius: $global-radius;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: transparentize($white, .2) ;
-$titlebar-color: $black;
+$titlebar-background: transparent ;
+$titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $black;
-$titlebar-icon-color-hover: lighten($black, 20%);
+$titlebar-icon-color: $white;
+$titlebar-icon-color-hover: darken($titlebar-icon-color, 20%);
 $titlebar-icon-spacing: 0.25rem;
 
 // 36. Tooltip
