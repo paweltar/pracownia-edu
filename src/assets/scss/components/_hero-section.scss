@@ -5,16 +5,12 @@
     rgba(0,0,0, 0) 30%
   ),url(/assets/img/hero-img.jpeg) no-repeat fixed center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
 .arrow-down {
-  position: absolute;
   font-size: 56px;
-  left: 50%;
-  transform: translate3d(-50%,0,0);
-  bottom: 50px;
   animation-duration: 3s;
 }
 
