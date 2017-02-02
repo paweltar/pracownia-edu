@@ -1,0 +1,105 @@
+.footer {
+    background-color: #292c2f;
+    text-align: center;
+    padding: 4rem;
+    @include breakpoint(small only) {
+      padding: 4rem 2rem;
+    }
+    .inline-list a {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background-color: #33383b;
+        border-radius: 2px;
+        font-size: 1.5rem;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        margin: 0 3px 0 0;
+    }
+
+    .contact {
+        list-style-type: none;
+        margin: 0;
+        text-align: left;
+        color: #fff;
+
+        li {
+            margin-bottom: 2rem;
+
+            p {
+                padding-left: 5rem;
+            }
+        }
+
+        i {
+            position: absolute;
+            color: #fff;
+            font-size: 2rem;
+            line-height: 1;
+            margin: 0 0 0 -4rem;
+            vertical-align: middle;
+        }
+    }
+
+    .copywrite {
+        color: #8f9296;
+        font-size: 0.875rem;
+        margin: 0 0 1rem;
+    }
+
+    .about {
+        color: #92999f;
+        font-size: 0.875rem;
+        margin: 0 0 1rem;
+    }
+
+    .footer-links a {
+        list-style: none;
+        font-weight: normal;
+        color: #fff;
+        margin: 0;
+        font-size: 0.875rem;
+        border-bottom: 2px dotted transparent;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          border-bottom: 2px solid $neon-pink;
+        }
+        &::after {
+            content: "•";
+            padding: 0 0.2rem 0 0.4rem;
+        }
+
+        &:last-child::after {
+            content: "";
+            padding: 0 0.4rem 0 0.8rem;
+        }
+    }
+    @media only screen and (min-width: 40.063em) {
+        p {
+            text-align: left;
+        }
+
+        .social {
+            text-align: left;
+            margin: 0;
+        }
+
+        .contact {
+            text-align: left;
+
+            > i {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: $white;
+    i {
+        color: $neon-yellow;
+        margin-right: 0.5rem;
+    }
+}

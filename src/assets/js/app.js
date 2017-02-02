@@ -8,4 +8,10 @@ $(function(){
             $(".navigation").removeClass('color--alt');
         }
     });
+
+    $('.arrow-down').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $('.offer-cards__section').offset().top
+    }, 1000);
+    });
 });
