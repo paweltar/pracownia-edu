@@ -116,6 +116,14 @@ $(function() {
             }, 1000);
         });
 
-    } else if (window.location.pathname == '/kontakt.html') {}
+    } else if (window.location.pathname == '/kontakt.html') {
+      $(document).scroll(function() {
+          if ($(this).scrollTop() >= $('.map__section').offset().top - $(".navigation").height()) {
+              $(".navigation").addClass('color--alt');
+          } else {
+              $(".navigation").removeClass('color--alt');
+          }
+      });
+    }
 
 });
