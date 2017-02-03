@@ -1,0 +1,19 @@
+.contact-form__section {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, .60) 0%,
+    rgba(0,0,0, .60) 30%
+  ),url(/assets/img/hero-img.jpeg) no-repeat fixed center center;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.map__section {
+  min-height: 400px;
+  background-color: darken($clay, .8);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}

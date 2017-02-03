@@ -46,6 +46,13 @@
 }
 
 .menu-text {
+  .menu-link {
+    padding: 0;
+  }  
+}
+
+
+.menu-text {
   @include breakpoint(small only) {
     width: 100%;
     text-align: center;
