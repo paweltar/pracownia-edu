@@ -9,9 +9,10 @@ $(function(){
         }
     });
 
-    $('.arrow-down').on('click', function() {
+    $('.show-offer').on('click', function(e) {
+      e.preventDefault();
       $('html, body').animate({
         scrollTop: $('.offer-cards__section').offset().top
-    }, 1000);
+      }, 1000);
     });
 });
