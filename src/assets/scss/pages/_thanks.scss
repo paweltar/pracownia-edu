@@ -1,0 +1,27 @@
+.thank-you__section {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, .60) 0%,
+    rgba(0,0,0, .60) 30%
+  ),url(/assets/img/hero-img.jpeg) no-repeat fixed center center;
+  background-size: cover;
+  padding-top: 100px;
+  min-height: 100vh;
+  color: $white;
+}
+
+.thank-you__box {
+  text-align: center;
+  border: 3px dashed $neon-green;
+  padding: 30px;
+  color: $white;
+  display: none;
+  margin-bottom: 80px;
+  i {
+    color: $neon-green;
+  }
+}
+
+.submit-errors {
+  display: none;
+}

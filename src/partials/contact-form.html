@@ -1,18 +1,24 @@
-<form class="contact-form" action="https://formspree.io/paweltar@gmail.com" method="POST">
+<form id="contact-form" class="contact-form" action="https://formspree.io/paweltar@gmail.com" method="POST">
   <div class="row">
     <div class="small-12 medium-6 columns">
-      <input type="text" class="form__input" placeholder="Imię i nazwisko" name="name">
+      <input type="text" class="form__input" placeholder="Imię i nazwisko" name="name" required>
     </div>
     <div class="small-12 medium-6 columns">
-      <input type="email" class="form__input" placeholder="Adres email" name="_replyto">
+      <input type="email" class="form__input" placeholder="Adres email" name="_replyto" required>
     </div>
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <input type="text" class="form__input form__input--message" placeholder="Treść wiadomości" name="message">
+      <input type="text" class="form__input form__input--message" placeholder="Treść wiadomości" name="message" required>
       <input class="button success expanded" type="submit" value="Wyślij">
     </div>
   </div>
   <input type="hidden" name="_subject" value="Nowa wiadomość ze strony pracowni edukacyjnej" />
   <input type="text" name="_gotcha" style="display:none" />
+  <div class="callout alert submit-errors" data-closable>
+    <p>Coś poszło nie tak, nie udało się wysłać wiadomości.</p>
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 </form>
