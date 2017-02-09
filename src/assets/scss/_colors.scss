@@ -3,3 +3,22 @@ $neon-purple: #A24CC2;
 $neon-green: #58F380;
 $neon-yellow: #D9E716;
 $neon-red: #F25A40;
+
+$dark-clay: #7F7359;
+
+$neon-palette: (
+  neon-pink: $neon-pink,
+	neon-purple: $neon-purple,
+	neon-green: $neon-green,
+	neon-yellow: $neon-yellow,
+	neon-red: $neon-red
+);
+@mixin generate-color-classess {
+  @each $key, $color in $neon-palette {
+    .#{$key} {
+      color: #{$color};
+    }
+  }
+}
+
+@include generate-color-classess;
