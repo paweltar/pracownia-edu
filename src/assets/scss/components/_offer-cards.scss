@@ -14,6 +14,8 @@
   border-radius: $global-radius;
   border: none;
   background-image: url("/assets/img/geometry2.png");
+  max-width: 370px;
+  margin: 20px auto;
   .title {
     line-height: 3rem;
     font-size: 1.5rem;
